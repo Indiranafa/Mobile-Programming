@@ -11,37 +11,6 @@
 #### Tujuan
 Membuat widget text sederhana untuk menampilkan teks dengan styling tertentu.
 
-#### Langkah-langkah Implementasi
-
-1. **Membuat folder `basic_widgets`**
-   - Buat folder baru bernama `basic_widgets` di dalam folder `lib/`
-   - Folder ini akan berisi berbagai widget dasar yang akan dibuat
-
-2. **Membuat file `text_widget.dart`**
-   - Buat file baru `text_widget.dart` di dalam folder `lib/basic_widgets/`
-   - File ini berisi implementasi widget text custom
-
-3. **Implementasi kode `MyTextWidget`**
-   ```dart
-   import 'package:flutter/material.dart';
-
-   class MyTextWidget extends StatelessWidget {
-     const MyTextWidget({Key? key}) : super(key: key);
-
-     @override
-     Widget build(BuildContext context) {
-       return const Text(
-         "Nama saya Indira Nafa Aurah Huda, sedang belajar Pemrograman Mobile",
-         style: TextStyle(color: Colors.red, fontSize: 14),
-         textAlign: TextAlign.center);
-     }
-   }
-   ```
-
-4. **Modifikasi `main.dart`**
-   - Import file `text_widget.dart`
-   - Ganti widget body dengan `MyTextWidget()`
-
 #### Penjelasan Kode
 
 - **StatelessWidget**: Widget yang tidak memiliki state yang berubah-ubah
@@ -215,7 +184,7 @@ Membuat aplikasi Flutter pertama yang lengkap dengan mengikuti tutorial resmi da
 - **toggleFavorite()**: Logic untuk add/remove favorites
 
 #### Screenshot
-![Tombol dan Logika](screenshot/13.png)
+![Tombol](screenshot/13.png)
 *Implementasi tombol Next dan logika state management*
 
 ### Langkah 4: Memperindah UI dengan BigCard Widget
