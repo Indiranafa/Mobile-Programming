@@ -172,12 +172,112 @@ Mengimplementasikan Date Picker untuk memilih tanggal.
 #### Screenshot
 ![Date Picker Widget Result](screenshot/10.png)
 
-## Kesimpulan
+## TUGAS PRAKTIKUM: Flutter Application Development (Namer App)
 
-1. **Cupertino Widgets** memberikan tampilan iOS-style dalam aplikasi Flutter
-2. **FloatingActionButton** merupakan komponen penting dalam Material Design
-3. **Scaffold** menyediakan struktur layout yang konsisten
-4. **Dialog Widget** berguna untuk interaksi user yang membutuhkan konfirmasi
-5. **TextField** adalah komponen dasar untuk input data dari user
-6. **Date Picker** memudahkan user dalam memilih tanggal dengan interface yang user-friendly
+### Tujuan
+Membuat aplikasi Flutter pertama yang lengkap dengan mengikuti tutorial resmi dari Google Codelabs. Aplikasi ini merupakan word pair generator dengan fitur favorit dan navigasi.
 
+### Deskripsi Proyek
+**Namer App** adalah aplikasi Flutter yang dapat:
+- Generate pasangan kata bahasa Inggris secara acak
+- Menambah dan menghapus kata favorit
+- Navigasi antara halaman Home dan Favorites
+- Responsive design yang menyesuaikan ukuran layar
+- Modern Material Design 3
+
+### Langkah 1: Setup Project dan Dependencies
+
+**Penjelasan Dependencies:**
+- **english_words**: Package untuk generate kata bahasa Inggris
+- **provider**: State management solution untuk Flutter
+
+#### Screenshot
+![Setup Dependencies](screenshot/11.png)
+*Konfigurasi pubspec.yaml dengan dependencies yang diperlukan*
+
+### Langkah 2: Aplikasi Dasar dengan Hot Reload
+
+**Penjelasan Kode:**
+- **ChangeNotifierProvider**: Menyediakan state ke seluruh widget tree
+- **ChangeNotifier**: Base class untuk state management
+- **context.watch**: Mendengarkan perubahan state
+- **WordPair.random()**: Generate pasangan kata acak
+
+#### Screenshot
+![Aplikasi Dasar](screenshot/12.png)
+*Aplikasi dasar dengan text generator dan hot reload*
+
+### Langkah 3: Menambahkan Tombol dan Logika
+
+**Penjelasan:**
+- **notifyListeners()**: Memberitahu widget untuk rebuild
+- **List\<WordPair>**: Type-safe list untuk menyimpan favorit
+- **toggleFavorite()**: Logic untuk add/remove favorites
+
+#### Screenshot
+![Tombol dan Logika](screenshot/13.png)
+*Implementasi tombol Next dan logika state management*
+
+### Langkah 4: Memperindah UI dengan BigCard Widget
+
+**Features:**
+- **Theme integration**: Menggunakan color scheme aplikasi
+- **Accessibility**: semanticsLabel untuk screen reader
+- **Typography**: displayMedium text style
+- **Material Design**: Card widget dengan proper spacing
+
+#### Screenshot
+![BigCard Widget](screenshot/14.png)
+*BigCard widget dengan styling dan tema yang konsisten*
+
+### Langkah 5: Navigasi dengan NavigationRail
+
+**Responsive Features:**
+- **LayoutBuilder**: Responsive design berdasarkan constraint
+- **NavigationRail**: Modern navigation component
+- **SafeArea**: Protection dari notch dan status bar
+- **extended property**: Auto show/hide labels berdasarkan lebar layar
+
+#### Screenshot
+![Navigation Rail](screenshot/15.png)
+*NavigationRail dengan responsive design dan multiple pages*
+![Favorites Page](screenshot/16.png)
+
+### Langkah 6: Generator Page dengan Interactive Buttons
+
+**Interactive Elements:**
+- **Dynamic icons**: Berubah berdasarkan favorite status
+- **ElevatedButton.icon**: Button dengan icon dan text
+- **Row layout**: Horizontal arrangement untuk buttons
+- **State synchronization**: UI selalu sync dengan state
+
+#### Screenshot
+![Generator Page Complete](screenshot/17.png)
+*Generator Page lengkap dengan interactive buttons dan dynamic icons*
+
+### Fitur-Fitur Aplikasi
+
+#### 1. State Management
+- **Provider pattern** untuk global state
+- **ChangeNotifier** untuk reactive updates
+- **Type-safe** state dengan generics
+
+#### 2. Responsive Design
+- **LayoutBuilder** untuk adaptive layout
+- **NavigationRail** yang responsive
+- **Breakpoint** di 600px untuk extended mode
+
+#### 3. Material Design 3
+- **ColorScheme** dengan seed color
+- **Typography** system dengan proper hierarchy
+- **Component** styling yang konsisten
+
+#### 4. Accessibility
+- **semanticsLabel** untuk screen readers
+- **SafeArea** untuk different device types
+- **High contrast** color combinations
+
+#### 5. Navigation
+- **Multi-page** navigation dengan StatefulWidget
+- **NavigationRail** untuk desktop/tablet
+- **State preservation** antar navigation
