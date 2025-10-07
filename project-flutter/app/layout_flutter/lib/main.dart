@@ -20,14 +20,14 @@ class MyApp extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
-                    'Wisata Gunung di Batu',
+                    'Wisata Sumber Sira di Malang',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 Text(
-                  'Batu, Malang, Indonesia',
+                  'Malang, Jawa Timur, Indonesia',
                   style: TextStyle(
                     color: Colors.grey,
                   ),
@@ -59,11 +59,9 @@ class MyApp extends StatelessWidget {
     Widget textSection = Container(
       padding: const EdgeInsets.all(32),
       child: const Text(
-        'Gunung Bromo adalah gunung berapi aktif' 
-        'setinggi 2.392 mdpl di Jawa Timur' 
-        'yang terkenal dengan lautan pasirnya,'
-        'pemandangan matahari terbit yang memukau,'
-        'dan keberadaan Suku Tengger yang melestarikan budaya dan ritual unik.',
+        'Sumber Sira adalah destinasi wisata alam yang terletak di Malang, Jawa Timur. '
+        'Tempat ini menawarkan pemandangan alam yang indah dengan suasana yang tenang dan sejuk. '
+        'Cocok untuk berlibur bersama keluarga dan menikmati keindahan alam pegunungan.',
         softWrap: true,
       ),
     );
@@ -74,10 +72,10 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
         ),
-        body: Column(
+        body: ListView(
           children: [
             Image.asset(
-              'assets/gunung_bromo.jpg',
+              'images/sumber_sira.jpg',
               width: 600,
               height: 240,
               fit: BoxFit.cover,
