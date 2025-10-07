@@ -28,3 +28,35 @@ Membuat project Flutter baru dengan nama `hello_world` dan memahami struktur das
 
 ### Hasil
 ![Deskripsi Gambar](screenshots/01.png)
+
+## Praktikum 4: Membuat Project Flutter Baru
+
+#### Langkah 1: Text Widget
+### Hasil
+![Deskripsi Gambar](screenshots/02.png)
+
+#### Langkah 2: Image Widget
+### Hasil
+![Deskripsi Gambar](screenshots/03.png)
+
+## Praktikum 5: Menerapkan Widget Material Design dan iOS Cupertino
+
+#### Langkah 1: Cupertino Button dan Loading Bar
+### Hasil
+![Deskripsi Gambar](screenshots/04.png)
+
+#### Langkah 2: Floating Action Button (FAB)
+### Hasil
+![Deskripsi Gambar](screenshots/05.png)
+
+#### Langkah 3: Scaffold Widget
+### Hasil
+![Deskripsi Gambar](screenshots/06.png)
+
+#### Langkah 4: Dialog Widget
+### Hasil
+![Deskripsi Gambar](screenshots/07.png)
+
+#### Langkah 5: Input dan Selection Widget
+### Hasil
+![Deskripsi Gambar](screenshots/08.png)

@@ -1,0 +1,4 @@
+# Placeholder for logo_polinema.jpg
+# Ganti file ini dengan logo Polinema yang sebenarnya
+# Format yang disarankan: JPG, PNG
+# Ukuran yang disarankan: 200x200 px atau lebih
