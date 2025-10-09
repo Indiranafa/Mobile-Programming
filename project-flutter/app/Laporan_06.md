@@ -95,9 +95,11 @@ Tugas ini mengembangkan aplikasi belanja dari Praktikum 5 dengan menambahkan atr
 
 Sistem navigasi dimodernisasi menggunakan plugin go_router yang memberikan type-safe navigation, declarative routing, dan error handling yang lebih baik. Aplikasi direfactor dengan membuat app_router.dart untuk konfigurasi route dan mengupdate main.dart menggunakan MaterialApp.router. Navigation menggunakan context.go() dengan data passing melalui extra parameter yang lebih clean dibandingkan arguments tradisional.
 
-![Tugas Praktikum 2 - GridView Marketplace](screenshot/TJB6_07.png)
+![Tugas Praktikum 2 - GridView Marketplace](screenshot/JB6_07.png)
 
-![Tugas Praktikum 2 - Hero Animation Detail](screenshot/TJB6_08.png)
+![Tugas Praktikum 2 - GridView Marketplace](screenshot/JB6_08.png)
+
+![Tugas Praktikum 2 - Hero Animation Detail](screenshot/JB6_09.png)
 
 ---
 
