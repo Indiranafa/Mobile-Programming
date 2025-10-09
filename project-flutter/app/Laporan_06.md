@@ -77,6 +77,30 @@ Aplikasi menggunakan Navigator.push() untuk berpindah antar halaman demo. Setiap
 
 ![Tugas Praktikum - Layout Tutorial](screenshot/TJB6_01.png)
 
+## Praktikum 5: Membangun Navigasi di Flutter
+
+Praktikum ini membangun aplikasi daftar belanja multi-halaman yang mendemonstrasikan navigasi dan route management di Flutter. Aplikasi terdiri dari HomePage yang menampilkan daftar item belanja menggunakan ListView.builder dan ItemPage yang menampilkan detail item yang dipilih. Data model Item dibuat dengan class yang memiliki properti name dan price. Navigation system menggunakan named routes dimana HomePage didefinisikan sebagai route '/' dan ItemPage sebagai route '/item' di main.dart. 
+
+Setiap item dalam ListView dibungkus dengan InkWell widget untuk memberikan touch feedback dan navigasi ke halaman detail. Data item dikirim ke ItemPage menggunakan arguments pada Navigator.pushNamed() dan diterima melalui ModalRoute.of(context).settings.arguments. ListView menggunakan Card widget sebagai container untuk menampilkan nama dan harga item dalam Row layout. ItemPage menampilkan detail item dengan format yang rapi menggunakan Column dan Text widgets, serta memiliki AppBar dengan title dinamis sesuai nama item yang dipilih.
+
+![Praktikum 5 - Daftar Belanja](screenshot/JB6_05.png)
+
+![Praktikum 5 - Detail Item](screenshot/JB6_06.png)
+
+---
+
+## Tugas Praktikum 2: Modifikasi dan Implementasi Go Router
+
+Tugas ini mengembangkan aplikasi belanja dari Praktikum 5 dengan menambahkan atribut imageUrl, stock, dan rating pada model Item. Tampilan diubah dari ListView menjadi GridView 2 kolom dengan desain marketplace yang menampilkan gambar, nama, harga, rating bintang, dan stok. Hero widget diimplementasikan untuk animasi transisi smooth antara halaman utama dan detail, menciptakan kontinuitas visual yang menarik.
+
+Sistem navigasi dimodernisasi menggunakan plugin go_router yang memberikan type-safe navigation, declarative routing, dan error handling yang lebih baik. Aplikasi direfactor dengan membuat app_router.dart untuk konfigurasi route dan mengupdate main.dart menggunakan MaterialApp.router. Navigation menggunakan context.go() dengan data passing melalui extra parameter yang lebih clean dibandingkan arguments tradisional.
+
+![Tugas Praktikum 2 - GridView Marketplace](screenshot/TJB6_07.png)
+
+![Tugas Praktikum 2 - Hero Animation Detail](screenshot/TJB6_08.png)
+
+---
+
 ## Kesimpulan
 
-Pada praktikum Layout dan Navigasi ini, berhasil diimplementasikan aplikasi Flutter dengan layout yang kompleks dan menarik. Aplikasi menampilkan informasi wisata Sumber Sira dengan struktur yang terdiri dari gambar header, informasi lokasi dengan rating, tombol interaktif, dan deskripsi detail.
+Pada praktikum Layout dan Navigasi ini, berhasil diimplementasikan aplikasi Flutter dengan layout yang kompleks dan menarik. Aplikasi menampilkan informasi wisata Sumber Sira dengan struktur yang terdiri dari gambar header, informasi lokasi dengan rating, tombol interaktif, dan deskripsi detail. Pengembangan lebih lanjut dengan implementasi aplikasi belanja menunjukkan kemampuan Flutter dalam membuat aplikasi multi-halaman dengan navigasi yang smooth, data management yang terstruktur, dan UI yang responsif menggunakan GridView dan Hero animations. Implementasi go_router memberikan fondasi yang kuat untuk pengembangan aplikasi yang scalable dengan routing system yang modern dan maintainable.

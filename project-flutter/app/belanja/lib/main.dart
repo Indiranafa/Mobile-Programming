@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:belanja/pages/home_page.dart';
-import 'package:belanja/pages/item_page.dart';
+import 'package:belanja/router/app_router.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,13 +8,10 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Shopping App',
-      initialRoute: '/',
-      routes: {
-        '/': (context) => HomePage(),
-        '/item': (context) => ItemPage(),
-      },
+      routerConfig: AppRouter.router, // Harus pakai AppRouter.router
+      debugShowCheckedModeBanner: false,
     );
   }
 }
