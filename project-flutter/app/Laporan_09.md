@@ -22,7 +22,7 @@ Memahami cara mengakses kamera perangkat, menampilkan preview, mengambil foto, d
 - Mengambil foto dengan `_controller.takePicture()` dan menampilkan hasil pada `DisplayPictureScreen`.
 
 ### Hasil / Screenshot
-Praktikum 1 — pengambilan foto (screenshot): `screenshot/JB09_1.jpeg`
+Praktikum 1 — pengambilan foto (screenshot/JB09_1.jpeg)
 
 ---
 
@@ -37,7 +37,7 @@ Membuat carousel pilihan filter warna yang dapat diaplikasikan ke foto.
 - Menggabungkan alur: setelah pengguna mengambil foto, aplikasi membuka layar filter dan menampilkan foto yang baru diambil—pengguna dapat memilih filter dengan menggeser carousel.
 
 ### Hasil / Screenshot
-Praktikum 2 — filter carousel (screenshot): `screenshot/JB09_2.jpeg`
+Praktikum 2 — filter carousel (screenshot/JB09_2.jpeg)
 
 ---
 
@@ -51,9 +51,9 @@ Praktikum 2 — filter carousel (screenshot): `screenshot/JB09_2.jpeg`
   3. Setelah menampilkan preview hasil, jika `TakePictureScreen` adalah home, aplikasi membuka `PhotoFilterCarousel(imagePath: <path>)` sehingga pengguna langsung bisa memilih filter untuk foto tersebut.
 
 ### Hasil / Screenshot
-Tugas Praktikum — filter carousel (screenshot): `screenshot/JB09_3.jpeg`
-`screenshot/JB09_4.jpeg`
-`screenshot/JB09_5.jpeg`
+Tugas Praktikum — filter carousel (screenshot/JB09_3.jpeg)
+(screenshot/JB09_4.jpeg)
+(screenshot/JB09_5.jpeg)
 
 ### Jelaskan maksud `void async` pada praktikum 1
 
