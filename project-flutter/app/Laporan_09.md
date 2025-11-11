@@ -22,7 +22,9 @@ Memahami cara mengakses kamera perangkat, menampilkan preview, mengambil foto, d
 - Mengambil foto dengan `_controller.takePicture()` dan menampilkan hasil pada `DisplayPictureScreen`.
 
 ### Hasil / Screenshot
-Praktikum 1 — pengambilan foto (screenshot/JB09_1.png)
+Praktikum 1 — pengambilan foto:
+
+![Praktikum 1 - Ambil Foto](screenshot/JB09_1.png)
 
 ---
 
@@ -37,7 +39,9 @@ Membuat carousel pilihan filter warna yang dapat diaplikasikan ke foto.
 - Menggabungkan alur: setelah pengguna mengambil foto, aplikasi membuka layar filter dan menampilkan foto yang baru diambil—pengguna dapat memilih filter dengan menggeser carousel.
 
 ### Hasil / Screenshot
-Praktikum 2 — filter carousel (screenshot/JB09_2.png)
+Praktikum 2 — filter carousel:
+
+![Praktikum 2 - Filter Carousel](screenshot/JB09_2.png)
 
 ---
 
@@ -51,22 +55,13 @@ Praktikum 2 — filter carousel (screenshot/JB09_2.png)
   3. Setelah menampilkan preview hasil, jika `TakePictureScreen` adalah home, aplikasi membuka `PhotoFilterCarousel(imagePath: <path>)` sehingga pengguna langsung bisa memilih filter untuk foto tersebut.
 
 ### Hasil / Screenshot
-Tugas Praktikum — filter carousel
+Tugas Praktikum — filter carousel:
 
-- screenshot/JB09_3.png  
-- screenshot/JB09_4.png  
-- screenshot/JB09_5.png
+![Tugas JB09_3](screenshot/JB09_3.png)
 
-Catatan: pastikan file gambar berada di folder `app/screenshot/` dengan nama di atas. Jika Anda menggunakan ekstensi `.jpeg` ganti nama di folder dan di file markdown agar sesuai. Setelah menambahkan gambar, commit & push ke remote supaya gambar muncul di GitHub.
+![Tugas JB09_4](screenshot/JB09_4.png)
 
-Contoh perintah git untuk menambahkan screenshot dan push:
-
-```powershell
-cd 'C:\Mobile-Programming\project-flutter\app'
-git add screenshot/JB09_1.png screenshot/JB09_2.png screenshot/JB09_3.png screenshot/JB09_4.png screenshot/JB09_5.png
-git commit -m "Add JB09 screenshots for Laporan_09"
-git push
-```
+![Tugas JB09_5](screenshot/JB09_5.png)
 
 ### Jelaskan maksud `void async` pada praktikum 1
 
